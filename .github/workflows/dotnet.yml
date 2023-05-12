@@ -22,7 +22,7 @@ jobs:
       uses: gittools/actions/gitversion/setup@0.10.2
       with:
         versionSpec: '5.x'
-    - determine version
+    - name: determine version
     - uses: gittools/actions/gitversion/execute@0.10.2
       id: gitversion
     - name: Setup .NET
